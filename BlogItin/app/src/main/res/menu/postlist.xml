@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/add_post" android:title="Add post"
+        android:icon="@drawable/ic_action_name" app:showAsAction="always"/>
+    <item android:id="@+id/signout" android:title="Sign Out" app:showAsAction="never" android:icon="@android:drawable/ic_lock_idle_lock"/>
+    <item android:id="@+id/webview" app:showAsAction="always" android:icon="@drawable/ic_webview"
+        android:title="Search Web" />
+    <item android:id="@+id/shareApp" app:showAsAction="always" android:icon="@drawable/ic_share" android:title="Share App"/>
+
+</menu>

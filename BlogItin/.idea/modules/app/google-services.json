@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "767711641010",
+    "firebase_url": "https://blogitin-d8b32.firebaseio.com",
+    "project_id": "blogitin-d8b32",
+    "storage_bucket": "blogitin-d8b32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767711641010:android:b0276add64ed3f46f438ab",
+        "android_client_info": {
+          "package_name": "com.yashraj.BlogIt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767711641010-p2vjiqa4qf5h058upl2catph1oc0sde4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yashraj.BlogIt",
+            "certificate_hash": "fc9cfcec49051aa48a54b3118848ae51534622cb"
+          }
+        },
+        {
+          "client_id": "767711641010-9fi666m3cdrdt4k6b7i0hfmv5376mj3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7y6orLsQ9EKBE9jygbO5b4lTRSPrVh3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767711641010-9fi666m3cdrdt4k6b7i0hfmv5376mj3s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

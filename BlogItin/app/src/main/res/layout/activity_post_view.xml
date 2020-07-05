@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="14dp"
+    android:layout_marginRight="14dp"
+    android:layout_marginTop="10dp"
+    android:foreground="@drawable/postcardback"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/postcardback"
+    >
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:paddingBottom="10dp"
+        app:cardElevation="2dp"
+        >
+
+        <LinearLayout
+        android:id="@+id/postviewlinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:id="@+id/PostViewImageList"
+            android:cropToPadding="false"
+            android:src="@drawable/header_bg"
+            />
+
+        <TextView
+            android:id="@+id/PostViewTitleListText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello There!"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/PostViewSubtitleListText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtitle"
+            android:layout_marginTop="5dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/PostViewDateListText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date created"
+            android:layout_marginTop="5dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

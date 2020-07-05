@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/act_bg"
+    tools:context=".Activities.CreateAccount">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dancing_script"
+        android:text="BlogIt.In"
+        android:textColor="@android:color/white"
+        android:textSize="80sp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/linearlayoutact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearlayoutact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/actbackground"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:paddingTop="25dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85">
+
+        <ImageButton
+            android:id="@+id/profilepicId"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/propic"
+            android:cropToPadding="false"
+            android:elevation="15dp"
+            android:focusableInTouchMode="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_pro"
+            android:translationZ="15dp"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:focusable="auto"
+            android:focusableInTouchMode="true"
+            android:hint="First Name"
+            app:boxBackgroundMode="outline"
+            app:hintEnabled="true"
+            app:hintTextColor="@android:color/black"
+            tools:visibility="visible">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/actfirstname_editID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Last Name"
+            app:boxBackgroundMode="outline"
+            app:hintEnabled="true"
+            app:hintTextColor="@android:color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/actlastname_editID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            app:boxBackgroundMode="outline"
+            app:hintEnabled="true"
+            app:hintTextColor="@android:color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/actemail_editID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:elevation="5dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:boxBackgroundMode="outline"
+            app:hintEnabled="true"
+            app:hintTextColor="@android:color/black"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/actpassword_editID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/signupbuttonID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@android:color/black"
+            android:elevation="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:hapticFeedbackEnabled="true"
+            android:soundEffectsEnabled="true"
+            android:text="Sign Up"
+            android:translationY="10dp"
+            android:translationZ="10dp"
+            app:cornerRadius="4dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
